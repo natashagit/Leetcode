@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/natashagit/Leetcode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/natashagit/Leetcode/tree/master/0238-product-of-array-except-self) |
 | [0242-valid-anagram](https://github.com/natashagit/Leetcode/tree/master/0242-valid-anagram) |
+| [1878-check-if-array-is-sorted-and-rotated](https://github.com/natashagit/Leetcode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 ## String
 |  |
 | ------- |
