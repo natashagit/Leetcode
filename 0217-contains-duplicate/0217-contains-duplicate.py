@@ -4,10 +4,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        count_nums = {}
-        for i in nums:
-            if i not in count_nums:
-                count_nums[i]=1
+        dict_={}
+        for i in range(len(nums)):
+            if nums[i] in dict_:
+                return True
             else:
-                return(True)
-        return(False)
+                dict_[nums[i]]=1
+        return False
