@@ -4,17 +4,18 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-
-        result = [1]
-        # Using postfix and prefix for values before and after
-        prefix = 1
-        for i in range(len(nums)-1):
-            result.append(nums[i]*prefix)
-            prefix *= nums[i]
+        left = [1]*len(nums)
+        right = [1]*len(nums)
+        result = []
         
-        postfix = 1
-        for i in range(len(nums)-1, -1, -1):
-            result[i] = result[i]*postfix
-            postfix*=nums[i]
+        # Take product of all elements to the left
+        for i in range(1, len(nums)):
+            left[i] = nums[i-1]*left[i-1]
+        # Take product of all elements to the right
+        for i in range(len(nums)-2, -1, -1):
+            right[i] = nums[i+1]*right[i+1]
+        # Take pairwise product of both
+        for i in range(len(nums)):
+            result.append(left[i]*right[i])
 
         return result
