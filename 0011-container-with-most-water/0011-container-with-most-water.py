@@ -10,9 +10,11 @@ class Solution(object):
         while a<len(height) and b>0:
             if height[a]<height[b]:
                 area = height[a]*(b-a)
+                # Need to increase height to increase area
                 a+=1
             else:
                 area = height[b]*(b-a)
+                # Need to increase height to increase area
                 b-=1
             if area>max_area:
                 max_area = area
