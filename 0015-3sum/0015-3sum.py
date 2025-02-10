@@ -22,10 +22,6 @@ class Solution(object):
                 j+=1   
         return [list(triplet) for triplet in result]    
         
-
-
-
-
         # Time Complexity = O(n^3)
         # result = []
         # # Sort nums
