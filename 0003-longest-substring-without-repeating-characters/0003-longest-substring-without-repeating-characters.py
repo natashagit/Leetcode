@@ -4,6 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
+        # Sliding window to keep check of all substrings
         maxi=0
         if len(s)==1:
             return 1
