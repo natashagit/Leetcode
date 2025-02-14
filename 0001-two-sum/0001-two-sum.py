@@ -5,6 +5,7 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
+        # Time Complexity= O(n)
         dict = {}
         for i in range(len(nums)):
             diff = target - nums[i]
@@ -13,6 +14,13 @@ class Solution(object):
             else:
                 return [dict[diff], i]
 
+        # Time Complexity = O(n^2)
+        # n = len(nums)
+        # for i in range(n):
+        #     for j in range(i + 1, n):
+        #         if nums[i] + nums[j] == target:
+        #             return [i, j]
+        # return []
        
 
         
