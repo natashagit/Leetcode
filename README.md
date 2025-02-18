@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0073-set-matrix-zeroes](https://github.com/natashagit/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0128-longest-consecutive-sequence](https://github.com/natashagit/Leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0141-linked-list-cycle](https://github.com/natashagit/Leetcode/tree/master/0141-linked-list-cycle) |
+| [0146-lru-cache](https://github.com/natashagit/Leetcode/tree/master/0146-lru-cache) |
 | [0217-contains-duplicate](https://github.com/natashagit/Leetcode/tree/master/0217-contains-duplicate) |
 | [0424-longest-repeating-character-replacement](https://github.com/natashagit/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 ## Prefix Sum
@@ -84,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Design
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/natashagit/Leetcode/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/natashagit/Leetcode/tree/master/0155-min-stack) |
 ## Dynamic Programming
 |  |
@@ -107,6 +109,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0021-merge-two-sorted-lists](https://github.com/natashagit/Leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0141-linked-list-cycle](https://github.com/natashagit/Leetcode/tree/master/0141-linked-list-cycle) |
 | [0143-reorder-list](https://github.com/natashagit/Leetcode/tree/master/0143-reorder-list) |
+| [0146-lru-cache](https://github.com/natashagit/Leetcode/tree/master/0146-lru-cache) |
 ## Recursion
 |  |
 | ------- |
@@ -121,4 +124,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/natashagit/Leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0424-longest-repeating-character-replacement](https://github.com/natashagit/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/natashagit/Leetcode/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
