@@ -9,7 +9,7 @@ class Solution(object):
         for num in numSet:
             # jumps straight to element without prev consecutive numbers
             if (num-1) not in numSet:
-                length=1
+                length=0
                 # if the next consecutive element present
                 while (num+length) in numSet:
                     # increase length
