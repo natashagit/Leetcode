@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/natashagit/Leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/natashagit/Leetcode/tree/master/0049-group-anagrams) |
 | [0151-reverse-words-in-a-string](https://github.com/natashagit/Leetcode/tree/master/0151-reverse-words-in-a-string) |
+| [0242-valid-anagram](https://github.com/natashagit/Leetcode/tree/master/0242-valid-anagram) |
 | [0424-longest-repeating-character-replacement](https://github.com/natashagit/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0680-valid-palindrome-ii](https://github.com/natashagit/Leetcode/tree/master/0680-valid-palindrome-ii) |
 ## Sorting
@@ -35,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/natashagit/Leetcode/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/natashagit/Leetcode/tree/master/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/natashagit/Leetcode/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/natashagit/Leetcode/tree/master/0242-valid-anagram) |
 ## Hash Table
 |  |
 | ------- |
@@ -47,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0141-linked-list-cycle](https://github.com/natashagit/Leetcode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/natashagit/Leetcode/tree/master/0146-lru-cache) |
 | [0217-contains-duplicate](https://github.com/natashagit/Leetcode/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/natashagit/Leetcode/tree/master/0242-valid-anagram) |
 | [0424-longest-repeating-character-replacement](https://github.com/natashagit/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 ## Prefix Sum
 |  |
