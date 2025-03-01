@@ -10,7 +10,7 @@ class Solution(object):
             while (k>0):
                 if k%2!=0:
                     cnt+=1
-                k = k/2
+                k = k//2
             ans.append(cnt)
             cnt = 0
         return ans
