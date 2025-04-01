@@ -12,6 +12,7 @@ class Solution(object):
         :rtype: int
         """
         A = []
+        # Depth First Search using Inorder traversal to add into array
         def InOrder(node):
             if node is None:
                 return
@@ -19,4 +20,5 @@ class Solution(object):
             A.append(node.val)
             InOrder(node.right)
         InOrder(root)
+        # K-th element from array
         return A[k-1]
