@@ -11,6 +11,7 @@ class Solution(object):
         pair = intervals[0]
         while i<len(intervals):
             if pair[1]>=intervals[i][0]:
+                pair[0] = min(pair[0], intervals[i][0])
                 pair[1] = max(pair[1], intervals[i][1])
             else:
                 result.append(pair)
