@@ -1,24 +1,24 @@
-class Solution(object):
-    def insert(self, intervals, newInterval):
-        """
-        :type intervals: List[List[int]]
-        :type newInterval: List[int]
-        :rtype: List[List[int]]
-        """
-        i = 0 
+class Solution:
+    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+        # Add the new interval in
+        intervals.append(newInterval)
+        # Sort the intervals by first element
+        intervals = sorted(intervals, key=lambda x:x[0])
+        # Take first interval for comparison
+        pair = intervals[0]
+        i=1
         result = []
-        # Left side elements
-        while i<len(intervals) and intervals[i][1]<newInterval[0]:
-            result.append(intervals[i])
-            i+=1
-        # New interval for overlapping one
-        while i<len(intervals) and intervals[i][0]<=newInterval[1]:
-            newInterval[0] = min(intervals[i][0], newInterval[0])
-            newInterval[1] = max(intervals[i][1], newInterval[1])
-            i+=1
-        result.append(newInterval)
-        # Right side elements
+        # Iterate through intervals from second
         while i<len(intervals):
-            result.append(intervals[i])
+            # If the interval is overlapping, take min and max to merge and update pair
+            if pair[1]>=intervals[i][0]:
+                pair[0] = min(pair[0], intervals[i][0])
+                pair[1] = max(pair[1], intervals[i][1])
+            else:
+                # No overlap, just append pair to result and update pair to next element
+                result.append(pair)
+                pair = intervals[i]
             i+=1
+        # Append last element in pair
+        result.append(pair)
         return result
