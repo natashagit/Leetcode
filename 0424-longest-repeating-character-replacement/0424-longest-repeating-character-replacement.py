@@ -8,7 +8,7 @@ class Solution:
         l=0
         # Looping through elements in window
         for r in range(len(s)):
-            # Update dictionary with cunt of elements
+            # Update dictionary with count of elements
             count[s[r]] = 1 +count.get(s[r], 0)
             # check if window size - max frequency of element exceeding k (number of replacements)
             while (r-l+1) - max(count.values())> k:
