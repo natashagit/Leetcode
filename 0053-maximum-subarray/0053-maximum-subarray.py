@@ -1,16 +1,11 @@
-class Solution(object):
-    def maxSubArray(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        max_sum = nums[0]
-        cnt_sum = 0
-        for i in range(len(nums)):
-            cnt_sum+=nums[i]
-            if cnt_sum>max_sum:
-                max_sum=cnt_sum
-            if cnt_sum<0:
-                cnt_sum=0
-            
-        return max_sum
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        maxSub = max(nums)
+        currSum = 0
+        for n in nums:
+            if currSum<0:
+                currSum = 0
+            currSum+=n
+            maxSub = max(maxSub, currSum)
+
+        return maxSub
