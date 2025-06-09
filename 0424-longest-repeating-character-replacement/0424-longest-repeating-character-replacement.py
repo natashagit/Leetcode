@@ -1,44 +1,21 @@
-class Solution(object):
-    def characterReplacement(self, s, k):
-        """
-        :type s: str
-        :type k: int
-        :rtype: int
-        """
-        # Time Complexity = O(n)
-        start = 0
+class Solution:
+    def characterReplacement(self, s: str, k: int) -> int:
+        # Keep a count dictionary for frequency of characters
         count = {}
-        max_count = 0
-        max_length = 0
-        for i in range(len(s)):
-            count[s[i]]=count.get(s[i],0)+1
-            max_count = max(max_count, count[s[i]])
-            if (i-start+1)-max_count>k:
-                count[s[start]]-=1
-                start+=1
-            max_length = max(max_length, i-start+1)
-        return max_length
-
-        # Brute Force approach: Time Complexity= O(n^2)
-        # maxlen=0
-        # for i in range(len(s)):
-        #     d = {}
-        #     maxf = 0
-        #     for j in range(i, len(s)):
-        #         if s[j] in d:
-        #             d[s[j]]+=1
-        #         else:
-        #             d[s[j]]=1
-        #         maxf = max(maxf, d[s[j]])
-        #         # Len - maxfreq: can be changed
-        #         changes = (j-i+1)-maxf
-        #         if changes<=k:
-        #             maxlen = max(maxlen, j-i+1)
-        #         else:
-        #             break
-        # return maxlen
-
-
-
-
-        
+        # Result to store longest window size
+        result = 0
+        # Left pointer for start of window
+        l=0
+        # Looping through elements in window
+        for r in range(len(s)):
+            # Update dictionary with cunt of elements
+            count[s[r]] = 1 +count.get(s[r], 0)
+            # check if window size - max frequency of element exceeding k (number of replacements)
+            while (r-l+1) - max(count.values())> k:
+                # Decrement first element frequency in count by 1
+                count[s[l]]-=1
+                # If it exceeds, shift l ahead
+                l+=1
+            # Result contains maximum window size
+            result = max(result, r-l+1)
+        return result
