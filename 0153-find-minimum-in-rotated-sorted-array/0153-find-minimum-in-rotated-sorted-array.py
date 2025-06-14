@@ -1,33 +1,22 @@
-class Solution(object):
-    def findMin(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        # Time complexity = O(lgn)
-        n = len(nums)
-        low = 0
-        high = n-1
+class Solution:
+    def findMin(self, nums: List[int]) -> int:
         min_val = float("inf")
+        low = 0
+        high = len(nums)-1
+        # Find mid point dynamically
         while (low<=high):
-            mid = (low+high)/2
-            # check if left or right sorted
-            if nums[low]<=nums[mid]:
-                # In sorted left half
-                min_val = min(nums[low], min_val)
+            mid = int((low+high)/2)
+            # Check if left half or right half is sorted
+            if nums[mid]>=nums[low]:
+                # Left half sorted
+                min_val = min(min_val, nums[low])
+                # Took minimum value in left half, now move to right half
                 low = mid+1
             else:
-                # In sorted right half
-                min_val = min(nums[mid], min_val)
-                high = mid-1
+                # Right half sorted
+                min_val = min(min_val, nums[mid])
+                high =mid-1
         return min_val
-            
 
 
-
-
-        # Time complexity = O(n)
-        # min_val = float("inf")
-        # for i in range(len(nums)):
-        #     min_val = min(nums[i],min_val)
-        # return min_val
+        
