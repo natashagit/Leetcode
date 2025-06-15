@@ -1,13 +1,8 @@
-class Solution(object):
-    def containsDuplicate(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
-        dict_={}
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        dict_ = {}
         for i in range(len(nums)):
-            if nums[i] in dict_:
+            dict_[nums[i]]=1+dict_.get(nums[i], 0)
+            if dict_[nums[i]]>1:
                 return True
-            else:
-                dict_[nums[i]]=1
         return False
