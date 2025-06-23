@@ -1,30 +1,30 @@
-class Solution(object):
-    def countSubstrings(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
-        # Time Complexity = O(n^2)
-        res=0
+class Solution:
+    def countSubstrings(self, s: str) -> int:
+        cnt= 0
+        i = 0
         
-        for i in range(len(s)):
-            # For odd number string palindromes
+        while i<len(s):
+            #odd
             l = r = i
             while l>=0 and r<len(s):
                 if s[l]==s[r]:
-                    res+=1
-                    r+=1
+                    cnt+=1
                     l-=1
+                    r+=1
                 else:
                     break
-            # For even number string palindromes
+            i+=1
+        i=0
+        while i<len(s):
+            # even
             l = i
             r = i+1
             while l>=0 and r<len(s):
                 if s[l]==s[r]:
-                    res+=1
-                    r+=1
+                    cnt+=1
                     l-=1
+                    r+=1
                 else:
                     break
-        return res
+            i+=1
+        return cnt
