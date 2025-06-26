@@ -1,9 +1,5 @@
-class Solution(object):
-    def longestConsecutive(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
         numSet = set(nums)
         longest = 0
         for num in numSet:
@@ -17,3 +13,6 @@ class Solution(object):
                 # calculate the max length of consecutive seq
                 longest = max(length, longest)
         return longest
+
+
+            
