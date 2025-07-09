@@ -1,17 +1,21 @@
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
-        # frequency of chars in dict
-        dict_s = {}
-        # sliding window
-        i = 0
-        j = 0
-        max_len = 0
-        while j<len(s):
-            dict_s[s[j]] = 1 + dict_s.get(s[j], 0)
-            if (j-i+1)-max(dict_s.values())>k:
-                dict_s[s[i]]-=1
-                i+=1
-            max_len = max(max_len, j-i+1)
-            j+=1
-        # Return length of longest sliding window
-        return max_len
+        # Keep a count dictionary for frequency of characters
+        count = {}
+        # Result to store longest window size
+        result = 0
+        # Left pointer for start of window
+        l=0
+        # Looping through elements in window
+        for r in range(len(s)):
+            # Update dictionary with count of elements
+            count[s[r]] = 1 +count.get(s[r], 0)
+            # check if window size - max frequency of element exceeding k (number of replacements)
+            while (r-l+1) - max(count.values())> k:
+                # Decrement first element frequency in count by 1
+                count[s[l]]-=1
+                # If it exceeds, shift l ahead
+                l+=1
+            # Result contains maximum window size
+            result = max(result, r-l+1)
+        return result
