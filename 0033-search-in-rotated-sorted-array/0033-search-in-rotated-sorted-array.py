@@ -5,18 +5,21 @@ class Solution:
 
         while low<=high:
             mid = int((low+high)/2)
-            if target == nums[mid]:
+            if target==nums[mid]:
                 return mid
+            # Check in sorted left half
             if nums[low]<=nums[mid]:
-                # left half sorted
-                if nums[low] <= target and target <= nums[mid]:
+                if target>=nums[low] and target<=nums[mid]:
+                    # within left half
                     high = mid-1
                 else:
-                    low = mid+1
+                    # not in left half so update low
+                    low =mid+1
             else:
-                # right half sorted
-                if nums[mid]<=target and target<=nums[high]:
+                if target>=nums[mid] and target<=nums[high]:
+                    # within right half
                     low = mid+1
                 else:
+                    # not in right half, move to left half
                     high = mid-1
         return -1
