@@ -71,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/natashagit/Leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/natashagit/Leetcode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/natashagit/Leetcode/tree/master/0268-missing-number) |
+| [0295-find-median-from-data-stream](https://github.com/natashagit/Leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/natashagit/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0435-non-overlapping-intervals](https://github.com/natashagit/Leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/natashagit/Leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
@@ -135,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0151-reverse-words-in-a-string](https://github.com/natashagit/Leetcode/tree/master/0151-reverse-words-in-a-string) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/natashagit/Leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0234-palindrome-linked-list](https://github.com/natashagit/Leetcode/tree/master/0234-palindrome-linked-list) |
+| [0295-find-median-from-data-stream](https://github.com/natashagit/Leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0647-palindromic-substrings](https://github.com/natashagit/Leetcode/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/natashagit/Leetcode/tree/master/0680-valid-palindrome-ii) |
 ## Greedy
@@ -161,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0155-min-stack](https://github.com/natashagit/Leetcode/tree/master/0155-min-stack) |
 | [0208-implement-trie-prefix-tree](https://github.com/natashagit/Leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/natashagit/Leetcode/tree/master/0211-design-add-and-search-words-data-structure) |
+| [0295-find-median-from-data-stream](https://github.com/natashagit/Leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0304-range-sum-query-2d-immutable](https://github.com/natashagit/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0731-my-calendar-ii](https://github.com/natashagit/Leetcode/tree/master/0731-my-calendar-ii) |
 ## Dynamic Programming
@@ -309,6 +312,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/natashagit/Leetcode/tree/master/0023-merge-k-sorted-lists) |
+| [0295-find-median-from-data-stream](https://github.com/natashagit/Leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/natashagit/Leetcode/tree/master/0347-top-k-frequent-elements) |
 ## Bucket Sort
 |  |
@@ -365,4 +369,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0739-daily-temperatures](https://github.com/natashagit/Leetcode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/natashagit/Leetcode/tree/master/0883-car-fleet) |
+## Data Stream
+|  |
+| ------- |
+| [0295-find-median-from-data-stream](https://github.com/natashagit/Leetcode/tree/master/0295-find-median-from-data-stream) |
 <!---LeetCode Topics End-->
