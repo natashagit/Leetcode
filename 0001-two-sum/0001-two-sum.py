@@ -1,26 +1,19 @@
 class Solution(object):
+    # input: nums array, target
+    # output: indices of two values in nums that add up to target
+    # dictionary -> value: index
+    # we check if the value subtracted from the target is there in the dictionary, if so we retur, the value for that key in the dict and the current index
+    # if the index!=the value: same element
     def twoSum(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
         """
-        # Time Complexity= O(n)
-        dict = {}
+        dict_nums = {}
         for i in range(len(nums)):
-            diff = target - nums[i]
-            if diff not in dict:
-                dict[nums[i]] = i
+            if (target-nums[i]) in dict_nums:
+                return [i, dict_nums[target-nums[i]]]
             else:
-                return [dict[diff], i]
-
-        # Time Complexity = O(n^2)
-        # n = len(nums)
-        # for i in range(n):
-        #     for j in range(i + 1, n):
-        #         if nums[i] + nums[j] == target:
-        #             return [i, j]
-        # return []
-       
-
+                dict_nums[nums[i]]=i
         
