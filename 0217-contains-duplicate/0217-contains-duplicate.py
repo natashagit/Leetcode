@@ -1,8 +1,17 @@
-class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
-        dict_ = {}
-        for i in range(len(nums)):
-            dict_[nums[i]]=1+dict_.get(nums[i], 0)
-            if dict_[nums[i]]>1:
+class Solution(object):
+    # input: array nums
+    # output: if more than 1 occurrence of any value in nums, return True
+    # use dict
+    def containsDuplicate(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        dict_nums = {}
+        for i in nums:
+            if i in dict_nums:
                 return True
+            else:
+                dict_nums[i]=1
         return False
+        
