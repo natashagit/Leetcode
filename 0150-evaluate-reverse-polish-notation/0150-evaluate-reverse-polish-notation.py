@@ -15,19 +15,23 @@ class Solution(object):
         # evaluate value and push back onto stack
         # finally return stack[-1]
         stack = []
-        for t in tokens:
-            if t.lstrip('-').isdigit():
-                stack.append(int(t))
-            else:
+        for i in range(len(tokens)):
+            if tokens[i]=="*":
                 a = stack.pop()
                 b = stack.pop()
-                if t=='+':
-                    stack.append(b+a)
-                elif t=='*':
-                    stack.append(b*a)
-                elif t=='-':
-                    stack.append(b-a)
-                else:
-                    stack.append(int(float(b)/a))
-        if stack:
-            return stack[-1]
+                stack.append(a*b)
+            elif tokens[i]=="+":
+                a = stack.pop()
+                b = stack.pop()
+                stack.append(a+b)
+            elif tokens[i]=="-":
+                a = stack.pop()
+                b = stack.pop()
+                stack.append(b-a)
+            elif tokens[i]=="/":
+                a = stack.pop()
+                b = stack.pop()
+                stack.append(int(float(b)/a))
+            else:
+                stack.append(int(tokens[i]))
+        return stack[0]
