@@ -7,11 +7,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        dict_nums = {}
-        for i in nums:
-            if i in dict_nums:
+        seen = set()
+        for num in nums:
+            if num in seen:
                 return True
-            else:
-                dict_nums[i]=1
+            seen.add(num)
         return False
         
