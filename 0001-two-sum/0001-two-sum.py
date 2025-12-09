@@ -10,10 +10,17 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        dict_nums = {}
+        # input: nums array, target
+        # output: index of two numbers that add up to target
+        # dictionary
+        # init dict
+        # loop through array
+        # if target-nums[i] in dict then return i and dict[num[i]]
+        # else add dict[nums[i]]=i to dict
+        dict_num={}
         for i in range(len(nums)):
-            if (target-nums[i]) in dict_nums:
-                return [i, dict_nums[target-nums[i]]]
+            if target-nums[i] in dict_num:
+                return [i, dict_num[target-nums[i]]]
             else:
-                dict_nums[nums[i]]=i
+                dict_num[nums[i]]=i
         
