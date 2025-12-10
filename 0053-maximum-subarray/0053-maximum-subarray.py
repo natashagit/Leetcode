@@ -1,15 +1,21 @@
-class Solution:
-    def maxSubArray(self, nums: List[int]) -> int:
-        # Taking maximum subarray as max of list initially
-        maxSub = max(nums)
-        # Keep track of current sum
-        currSum = 0
-        for n in nums:
-            # If current sum goes lesser than 0, set to 0
-            if currSum<0:
-                currSum = 0
-            currSum+=n
-            # Take maximum sum of subarray
-            maxSub = max(maxSub, currSum)
+class Solution(object):
+    def maxSubArray(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        # input: array
+        # output: max sum
+        # max_sum
+        # loop through nums
+        # add values-> if its less than 0 make it 0
+        # store each time the sum as max_sum by taking max
 
-        return maxSub
+        max_sum = max(nums)
+        sum_value = 0
+        for i in nums:
+            if sum_value<0:
+                sum_value=0
+            sum_value +=i
+            max_sum = max(max_sum, sum_value)
+        return max_sum
