@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0435-non-overlapping-intervals](https://github.com/natashagit/Leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/natashagit/Leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0605-can-place-flowers](https://github.com/natashagit/Leetcode/tree/master/0605-can-place-flowers) |
+| [0724-find-pivot-index](https://github.com/natashagit/Leetcode/tree/master/0724-find-pivot-index) |
 | [0731-my-calendar-ii](https://github.com/natashagit/Leetcode/tree/master/0731-my-calendar-ii) |
 | [0739-daily-temperatures](https://github.com/natashagit/Leetcode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/natashagit/Leetcode/tree/master/0883-car-fleet) |
@@ -106,6 +107,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/natashagit/Leetcode/tree/master/0238-product-of-array-except-self) |
 | [0304-range-sum-query-2d-immutable](https://github.com/natashagit/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
+| [0724-find-pivot-index](https://github.com/natashagit/Leetcode/tree/master/0724-find-pivot-index) |
 | [0731-my-calendar-ii](https://github.com/natashagit/Leetcode/tree/master/0731-my-calendar-ii) |
 | [2102-find-the-middle-index-in-array](https://github.com/natashagit/Leetcode/tree/master/2102-find-the-middle-index-in-array) |
 | [2358-number-of-ways-to-split-array](https://github.com/natashagit/Leetcode/tree/master/2358-number-of-ways-to-split-array) |
