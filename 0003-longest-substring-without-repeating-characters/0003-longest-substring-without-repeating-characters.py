@@ -8,9 +8,14 @@ class Solution(object):
         # output: length of longest substring without duplicates
 
         # sliding window keeping only the substring with non duplicate chars
-        # keep count of longest substring
-        # store into a dictionary and if the count of any char>1
-            # reduce count of first element from dict until count==1
+        # keep max count of longest substring
+        # create set to store chars
+        # keep pointer at 0
+        # loop through string
+        # while char present in set remove first element of string in set
+        # add new char to set
+        # store into max_length the length of substring
+            
         max_length = 0
         str_set = set()
         l=0
