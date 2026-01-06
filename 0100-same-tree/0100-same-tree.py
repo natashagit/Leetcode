@@ -11,9 +11,13 @@ class Solution(object):
         :type q: Optional[TreeNode]
         :rtype: bool
         """
-        # If leaves are none
-        if p is None or q is None:
-            return (p==q)
-            
-        # Pre-order traversal - Root left right
-        return (p.val==q.val) and self.isSameTree(p.left,q.left) and self.isSameTree(p.right, q.right)
+        # input: roots of tree p and q
+        # output: true/false if trees same
+        # edge cases: empty tree
+        # check recursively if p tree's left==q tree's left and right accordingly
+        if p is None and q is None:
+            return True
+        if p is None or q is None or p.val!=q.val:
+            return False
+        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+
