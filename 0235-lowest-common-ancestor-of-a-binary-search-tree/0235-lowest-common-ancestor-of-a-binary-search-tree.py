@@ -13,14 +13,17 @@ class Solution(object):
         :type q: TreeNode
         :rtype: TreeNode
         """
+        # input: tree
+        # output: LCA - can be parent of both if common, or if one is parent of other
+        # p>root and q>root -> move right recursively;
+        # p<root and q<root -> move left;
+        # else -> root is LCA
+
         if root is None:
-            return
-        curr = root.val
-        # If root is greater than p and q, move left
-        if curr>p.val and curr>q.val:
-            return self.lowestCommonAncestor(root.left, p, q)
-        # If root is less than p and q, move right
-        if curr<p.val and curr<q.val:
+            return 
+        if p.val>root.val and q.val>root.val:
             return self.lowestCommonAncestor(root.right, p, q)
-        # Else return root
-        return root
+        elif p.val<root.val and q.val<root.val:
+            return self.lowestCommonAncestor(root.left, p, q)
+        else:
+            return root
