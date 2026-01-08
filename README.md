@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0057-insert-interval](https://github.com/natashagit/Leetcode/tree/master/0057-insert-interval) |
 | [0073-set-matrix-zeroes](https://github.com/natashagit/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/natashagit/Leetcode/tree/master/0075-sort-colors) |
+| [0079-word-search](https://github.com/natashagit/Leetcode/tree/master/0079-word-search) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/natashagit/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/natashagit/Leetcode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/natashagit/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -59,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0020-valid-parentheses](https://github.com/natashagit/Leetcode/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/natashagit/Leetcode/tree/master/0049-group-anagrams) |
 | [0076-minimum-window-substring](https://github.com/natashagit/Leetcode/tree/master/0076-minimum-window-substring) |
+| [0079-word-search](https://github.com/natashagit/Leetcode/tree/master/0079-word-search) |
 | [0091-decode-ways](https://github.com/natashagit/Leetcode/tree/master/0091-decode-ways) |
 | [0125-valid-palindrome](https://github.com/natashagit/Leetcode/tree/master/0125-valid-palindrome) |
 | [0139-word-break](https://github.com/natashagit/Leetcode/tree/master/0139-word-break) |
@@ -133,6 +135,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/natashagit/Leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/natashagit/Leetcode/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/natashagit/Leetcode/tree/master/0073-set-matrix-zeroes) |
+| [0079-word-search](https://github.com/natashagit/Leetcode/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/natashagit/Leetcode/tree/master/0200-number-of-islands) |
 | [0304-range-sum-query-2d-immutable](https://github.com/natashagit/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0417-pacific-atlantic-water-flow](https://github.com/natashagit/Leetcode/tree/master/0417-pacific-atlantic-water-flow) |
@@ -304,6 +307,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/natashagit/Leetcode/tree/master/0079-word-search) |
 | [0098-validate-binary-search-tree](https://github.com/natashagit/Leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/natashagit/Leetcode/tree/master/0100-same-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/natashagit/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
@@ -433,4 +437,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1509-replace-employee-id-with-the-unique-identifier](https://github.com/natashagit/Leetcode/tree/master/1509-replace-employee-id-with-the-unique-identifier) |
 | [1827-invalid-tweets](https://github.com/natashagit/Leetcode/tree/master/1827-invalid-tweets) |
 | [1908-recyclable-and-low-fat-products](https://github.com/natashagit/Leetcode/tree/master/1908-recyclable-and-low-fat-products) |
+## Backtracking
+|  |
+| ------- |
+| [0079-word-search](https://github.com/natashagit/Leetcode/tree/master/0079-word-search) |
 <!---LeetCode Topics End-->
