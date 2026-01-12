@@ -14,7 +14,7 @@ class Solution(object):
             heap.append((-d, x, y))
         
         heapq.heapify(heap)
-        print(heap)
+
         while len(heap)>k:
             heapq.heappop(heap)
         
