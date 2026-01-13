@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0057-insert-interval](https://github.com/natashagit/Leetcode/tree/master/0057-insert-interval) |
 | [0073-set-matrix-zeroes](https://github.com/natashagit/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/natashagit/Leetcode/tree/master/0075-sort-colors) |
+| [0078-subsets](https://github.com/natashagit/Leetcode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/natashagit/Leetcode/tree/master/0079-word-search) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/natashagit/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/natashagit/Leetcode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
@@ -295,6 +296,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0078-subsets](https://github.com/natashagit/Leetcode/tree/master/0078-subsets) |
 | [0190-reverse-bits](https://github.com/natashagit/Leetcode/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/natashagit/Leetcode/tree/master/0191-number-of-1-bits) |
 | [0268-missing-number](https://github.com/natashagit/Leetcode/tree/master/0268-missing-number) |
@@ -463,6 +465,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Backtracking
 |  |
 | ------- |
+| [0078-subsets](https://github.com/natashagit/Leetcode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/natashagit/Leetcode/tree/master/0079-word-search) |
 ## Geometry
 |  |
