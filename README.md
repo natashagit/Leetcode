@@ -494,4 +494,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0973-k-closest-points-to-origin](https://github.com/natashagit/Leetcode/tree/master/0973-k-closest-points-to-origin) |
+## Union-Find
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/natashagit/Leetcode/tree/master/0200-number-of-islands) |
 <!---LeetCode Topics End-->
