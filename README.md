@@ -52,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0525-contiguous-array](https://github.com/natashagit/Leetcode/tree/master/0525-contiguous-array) |
 | [0605-can-place-flowers](https://github.com/natashagit/Leetcode/tree/master/0605-can-place-flowers) |
 | [0621-task-scheduler](https://github.com/natashagit/Leetcode/tree/master/0621-task-scheduler) |
+| [0695-max-area-of-island](https://github.com/natashagit/Leetcode/tree/master/0695-max-area-of-island) |
 | [0724-find-pivot-index](https://github.com/natashagit/Leetcode/tree/master/0724-find-pivot-index) |
 | [0731-my-calendar-ii](https://github.com/natashagit/Leetcode/tree/master/0731-my-calendar-ii) |
 | [0739-daily-temperatures](https://github.com/natashagit/Leetcode/tree/master/0739-daily-temperatures) |
@@ -158,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/natashagit/Leetcode/tree/master/0200-number-of-islands) |
 | [0304-range-sum-query-2d-immutable](https://github.com/natashagit/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0417-pacific-atlantic-water-flow](https://github.com/natashagit/Leetcode/tree/master/0417-pacific-atlantic-water-flow) |
+| [0695-max-area-of-island](https://github.com/natashagit/Leetcode/tree/master/0695-max-area-of-island) |
 ## Union Find
 |  |
 | ------- |
@@ -356,6 +358,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/natashagit/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0417-pacific-atlantic-water-flow](https://github.com/natashagit/Leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0572-subtree-of-another-tree](https://github.com/natashagit/Leetcode/tree/master/0572-subtree-of-another-tree) |
+| [0695-max-area-of-island](https://github.com/natashagit/Leetcode/tree/master/0695-max-area-of-island) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/natashagit/Leetcode/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Breadth-First Search
 |  |
@@ -370,6 +373,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/natashagit/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/natashagit/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0417-pacific-atlantic-water-flow](https://github.com/natashagit/Leetcode/tree/master/0417-pacific-atlantic-water-flow) |
+| [0695-max-area-of-island](https://github.com/natashagit/Leetcode/tree/master/0695-max-area-of-island) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/natashagit/Leetcode/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Binary Tree
 |  |
@@ -498,4 +502,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/natashagit/Leetcode/tree/master/0200-number-of-islands) |
+| [0695-max-area-of-island](https://github.com/natashagit/Leetcode/tree/master/0695-max-area-of-island) |
 <!---LeetCode Topics End-->
