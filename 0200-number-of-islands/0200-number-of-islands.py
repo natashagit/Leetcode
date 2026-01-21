@@ -7,7 +7,7 @@ class Solution(object):
         # input: mXn matrix
         # output: number of islands
         # number of components
-        # DFS and everytime it breaks, increase count of islands
+        # DFS 
         r,c = len(grid), len(grid[0])
 
         def dfs(i,j):
