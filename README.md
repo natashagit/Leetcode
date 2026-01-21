@@ -60,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0875-koko-eating-bananas](https://github.com/natashagit/Leetcode/tree/master/0875-koko-eating-bananas) |
 | [0883-car-fleet](https://github.com/natashagit/Leetcode/tree/master/0883-car-fleet) |
 | [0973-k-closest-points-to-origin](https://github.com/natashagit/Leetcode/tree/master/0973-k-closest-points-to-origin) |
+| [0994-rotting-oranges](https://github.com/natashagit/Leetcode/tree/master/0994-rotting-oranges) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/natashagit/Leetcode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [2102-find-the-middle-index-in-array](https://github.com/natashagit/Leetcode/tree/master/2102-find-the-middle-index-in-array) |
 | [2358-number-of-ways-to-split-array](https://github.com/natashagit/Leetcode/tree/master/2358-number-of-ways-to-split-array) |
@@ -160,6 +161,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0304-range-sum-query-2d-immutable](https://github.com/natashagit/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0417-pacific-atlantic-water-flow](https://github.com/natashagit/Leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0695-max-area-of-island](https://github.com/natashagit/Leetcode/tree/master/0695-max-area-of-island) |
+| [0994-rotting-oranges](https://github.com/natashagit/Leetcode/tree/master/0994-rotting-oranges) |
 ## Union Find
 |  |
 | ------- |
@@ -374,6 +376,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/natashagit/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0417-pacific-atlantic-water-flow](https://github.com/natashagit/Leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0695-max-area-of-island](https://github.com/natashagit/Leetcode/tree/master/0695-max-area-of-island) |
+| [0994-rotting-oranges](https://github.com/natashagit/Leetcode/tree/master/0994-rotting-oranges) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/natashagit/Leetcode/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Binary Tree
 |  |
