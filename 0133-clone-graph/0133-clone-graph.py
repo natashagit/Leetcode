@@ -1,29 +1,31 @@
 """
 # Definition for a Node.
-class Node:
+class Node(object):
     def __init__(self, val = 0, neighbors = None):
         self.val = val
         self.neighbors = neighbors if neighbors is not None else []
 """
 
-from typing import Optional
-class Solution:
-    def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
-        # dictionary to map old neighbors to new
+class Solution(object):
+    def cloneGraph(self, node):
+        """
+        :type node: Node
+        :rtype: Node
+        """
         oldToNew = {}
-        
         def dfs(node):
-            # if node already visited
+            # if node copy exists, return copy
             if node in oldToNew:
                 return oldToNew[node]
-            
-            # making a copy of node and mapping it to old node
+            # create a copy of the node
             copy = Node(node.val)
-            oldToNew[node] = copy
-            # Running it recursively for all neighbors of old node
-            for nei in node.neighbors:
-                copy.neighbors.append(dfs(nei))
-                
+            oldToNew[node]=copy
+            for neighbor in node.neighbors:
+                copy.neighbors.append(dfs(neighbor))
             return copy
+        if node:
+            return dfs(node)
+        else:
+            return None
+            
         
-        return dfs(node) if node else None
