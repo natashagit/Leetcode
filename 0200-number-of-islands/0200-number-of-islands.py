@@ -13,7 +13,6 @@ class Solution(object):
         def dfs(i,j):
             if i<0 or i>=r or j<0 or j>=c or grid[i][j]!='1' or (i,j) in visit:
                 return
-            # convert to water since not visiting again
             visit.add((i,j))
             dfs(i, j+1)
             dfs(i+1, j)
