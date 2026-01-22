@@ -15,8 +15,7 @@ class Solution(object):
         # keep count for path length
         q.append((beginWord,1))
         wordSet = set(wordList)
-        # if endWord not in wordSet:
-        #     return 0
+        
         visited = set(beginWord)
         while q:
             word, level = q.popleft()
