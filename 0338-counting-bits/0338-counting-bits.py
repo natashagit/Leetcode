@@ -4,14 +4,18 @@ class Solution(object):
         :type n: int
         :rtype: List[int]
         """
-        cnt = 0
-        ans = []
-        for k in range(n+1):
-            while (k>0):
-                if k%2!=0:
-                    cnt+=1
-                k = k//2
-            ans.append(cnt)
-            cnt = 0
-        return ans
+        # input: integer n
+        # output: array consisting of number of 1's for all integers upto n
+
+        def count_1(n):
+            count = 0
+            while n:
+                if n&1:
+                    count+=1
+                n>>=1
+            return count
+        result = []
+        for i in range(n+1):
+            result.append(count_1(i))
         
+        return result
