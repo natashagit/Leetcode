@@ -4,19 +4,16 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        # Need to consider last element in the difference btwn sums
-        sum_res = len(nums)
-
-        # Taking the difference between the two sums of arrays to get missing/remaining value
-        for i in range(len(nums)):
-            sum_res +=(i-nums[i])
-        return sum_res
-
-        # Extra space of O(n)
-        # a = set(nums)
-        # for n in range(len(nums)+1):
-        #     if n not in a:
-        #         return n
-        # return
-        
-        
+        # input: nums array
+        # output: number that is not present in the range
+        # take XOR of all elements in nums and XOR of all elements in range
+        # take XOR of both
+        # get unique number
+        n = len(nums)
+        result = 0
+        for i in range(0,n+1):
+            result^=i
+        for num in nums:
+            result^=num
+        return result
+            
