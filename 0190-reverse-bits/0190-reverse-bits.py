@@ -4,6 +4,12 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
+        # input: integer n
+        # output: reversed bits integer of n
+        # loop through 32
+        # take last bit of n and add it to result from the left
+        # shift result to right and add last bit of n to it
+        # keep shifting n to left
         result = 0
         for _ in range(32):
             # shift result right 
