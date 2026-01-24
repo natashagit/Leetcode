@@ -7,6 +7,9 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
+        # input: nums array
+        # output: true - if an element repeated, else false
+        # keep a set and add values to set and if seen then return false
         seen = set()
         for num in nums:
             if num in seen:
