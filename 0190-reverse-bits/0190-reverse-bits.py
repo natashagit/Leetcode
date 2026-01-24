@@ -1,11 +1,15 @@
-class Solution:
-    # @param n, an integer
-    # @return an integer
+class Solution(object):
     def reverseBits(self, n):
-        res = 0
-        for i in range(32):
-            # Take right shift till 32 to get all bits by taking & with 1
-            bit = (n>>i)&1
-            # Take 31st bit onwards left shift to start from end and add to original bits with OR
-            res = res | (bit<<(31-i))
-        return res
+        """
+        :type n: int
+        :rtype: int
+        """
+        result = 0
+        for _ in range(32):
+            # shift result right 
+            result <<=1
+            # add the rightmost bit
+            result = result | (n&1)
+            # shift left
+            n>>=1
+        return result
