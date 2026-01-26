@@ -132,6 +132,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0142-linked-list-cycle-ii](https://github.com/natashagit/Leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0146-lru-cache](https://github.com/natashagit/Leetcode/tree/master/0146-lru-cache) |
 | [0169-majority-element](https://github.com/natashagit/Leetcode/tree/master/0169-majority-element) |
+| [0202-happy-number](https://github.com/natashagit/Leetcode/tree/master/0202-happy-number) |
 | [0208-implement-trie-prefix-tree](https://github.com/natashagit/Leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0217-contains-duplicate](https://github.com/natashagit/Leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/natashagit/Leetcode/tree/master/0242-valid-anagram) |
@@ -188,6 +189,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0143-reorder-list](https://github.com/natashagit/Leetcode/tree/master/0143-reorder-list) |
 | [0151-reverse-words-in-a-string](https://github.com/natashagit/Leetcode/tree/master/0151-reverse-words-in-a-string) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/natashagit/Leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0202-happy-number](https://github.com/natashagit/Leetcode/tree/master/0202-happy-number) |
 | [0234-palindrome-linked-list](https://github.com/natashagit/Leetcode/tree/master/0234-palindrome-linked-list) |
 | [0295-find-median-from-data-stream](https://github.com/natashagit/Leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0567-permutation-in-string](https://github.com/natashagit/Leetcode/tree/master/0567-permutation-in-string) |
@@ -317,6 +319,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/natashagit/Leetcode/tree/master/0048-rotate-image) |
 | [0070-climbing-stairs](https://github.com/natashagit/Leetcode/tree/master/0070-climbing-stairs) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/natashagit/Leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
+| [0202-happy-number](https://github.com/natashagit/Leetcode/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/natashagit/Leetcode/tree/master/0268-missing-number) |
 | [0371-sum-of-two-integers](https://github.com/natashagit/Leetcode/tree/master/0371-sum-of-two-integers) |
 | [0973-k-closest-points-to-origin](https://github.com/natashagit/Leetcode/tree/master/0973-k-closest-points-to-origin) |
