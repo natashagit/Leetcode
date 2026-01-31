@@ -1,17 +1,23 @@
-class Solution:
-    def findDuplicate(self, nums: List[int]) -> int:
-        slow, fast = 0, 0
+class Solution(object):
+    def findDuplicate(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
 
-        # Create a linked list pointing each element based on index, using fast and slow pointers
+        # first detect cycle
+        slow = fast = 0
         while True:
             slow = nums[slow]
             fast = nums[nums[fast]]
-            if slow==fast:
+            if slow == fast:
                 break
-        
+
+        # Detect start of cycle for repeated number
         pointer = 0
         while True:
-            slow = nums[slow]
             pointer = nums[pointer]
-            if pointer == slow:
+            slow = nums[slow]
+            if slow == pointer:
                 return slow
+        
