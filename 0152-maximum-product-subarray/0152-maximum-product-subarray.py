@@ -1,15 +1,20 @@
-class Solution:
-    def maxProduct(self, nums: List[int]) -> int:
-        # To keep track of max and min subarray products in array
+class Solution(object):
+    def maxProduct(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        # input: nums
+        # output: largest product in subarray
+        # initialize max product to max of elements in nums
         currMax, currMin = 1,1
-        # Initally result set to max in array
-        result = max(nums)
-        # Loop through nums and calculate max and min of product with self
-        for n in nums:
-            # Storing so can use for currMin
-            tmp = n*currMax
-            currMax = max(n*currMax, n*currMin, n)
-            currMin = min(tmp, n*currMin, n)
-            result = max(result, currMax)
+        max_product = max(nums)
+        for num in nums:
+            temp = num*currMax
+            currMax = max(num*currMax, num*currMin, num)
+            currMin = min(temp, num*currMin, num)
+            max_product = max(max_product, currMax)
+        return max_product
+
+
         
-        return result
