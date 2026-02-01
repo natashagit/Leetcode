@@ -4,18 +4,16 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        # input: array
-        # output: max sum
-        # max_sum
+        # input: array nums
+        # output: largest sum of the subarray
+        # constraints:not gonna be empty [], negative only is possible
+        # initialize maxsum=nums[0], currsum = nums[0]
         # loop through nums
-        # add values-> if its less than 0 make it 0
-        # store each time the sum as max_sum by taking max
-
-        max_sum = max(nums)
-        sum_value = 0
-        for i in nums:
-            if sum_value<0:
-                sum_value=0
-            sum_value +=i
-            max_sum = max(max_sum, sum_value)
-        return max_sum
+        # update currsum to max of element in nums vs currsum+element
+        # update maxsum to largest cursum
+        maxsum = nums[0]
+        currsum = nums[0]
+        for i in range(1, len(nums)):
+            currsum = max(nums[i], currsum+nums[i])
+            maxsum = max(maxsum, currsum)
+        return maxsum
