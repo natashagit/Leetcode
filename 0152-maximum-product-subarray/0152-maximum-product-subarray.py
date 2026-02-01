@@ -7,6 +7,7 @@ class Solution(object):
         # input: nums
         # output: largest product in subarray
         # initialize max product to max of elements in nums
+        # can be two negatives-> positive
         currMax, currMin = 1,1
         max_product = max(nums)
         for num in nums:
