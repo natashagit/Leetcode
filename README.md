@@ -54,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0435-non-overlapping-intervals](https://github.com/natashagit/Leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/natashagit/Leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0525-contiguous-array](https://github.com/natashagit/Leetcode/tree/master/0525-contiguous-array) |
+| [0560-subarray-sum-equals-k](https://github.com/natashagit/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0605-can-place-flowers](https://github.com/natashagit/Leetcode/tree/master/0605-can-place-flowers) |
 | [0621-task-scheduler](https://github.com/natashagit/Leetcode/tree/master/0621-task-scheduler) |
 | [0695-max-area-of-island](https://github.com/natashagit/Leetcode/tree/master/0695-max-area-of-island) |
@@ -142,6 +143,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/natashagit/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0424-longest-repeating-character-replacement](https://github.com/natashagit/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0525-contiguous-array](https://github.com/natashagit/Leetcode/tree/master/0525-contiguous-array) |
+| [0560-subarray-sum-equals-k](https://github.com/natashagit/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0567-permutation-in-string](https://github.com/natashagit/Leetcode/tree/master/0567-permutation-in-string) |
 | [0621-task-scheduler](https://github.com/natashagit/Leetcode/tree/master/0621-task-scheduler) |
 | [0846-hand-of-straights](https://github.com/natashagit/Leetcode/tree/master/0846-hand-of-straights) |
@@ -152,6 +154,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/natashagit/Leetcode/tree/master/0238-product-of-array-except-self) |
 | [0304-range-sum-query-2d-immutable](https://github.com/natashagit/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0525-contiguous-array](https://github.com/natashagit/Leetcode/tree/master/0525-contiguous-array) |
+| [0560-subarray-sum-equals-k](https://github.com/natashagit/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0724-find-pivot-index](https://github.com/natashagit/Leetcode/tree/master/0724-find-pivot-index) |
 | [0731-my-calendar-ii](https://github.com/natashagit/Leetcode/tree/master/0731-my-calendar-ii) |
 | [2102-find-the-middle-index-in-array](https://github.com/natashagit/Leetcode/tree/master/2102-find-the-middle-index-in-array) |
