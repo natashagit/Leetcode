@@ -12,9 +12,11 @@ class Solution(object):
         # keep a dict to maintain the prefix sum with count of it
         # add prefix sum to dict
         # check if prefix-k is present in dict
-        # if yes then increment the counter
+        # if yes then increment the counter with value in dict
+        # So every time we reach a prefix sum S, we ask:
+        # “How many times have I previously seen S - k?”
         counter = 0
-        dict_prefix = {0:1}
+        dict_prefix = {0:1} # add count 1 for 0 prefix_sum before array
         prefix_sum = 0
         for i in range(len(nums)):
             prefix_sum+=nums[i]
