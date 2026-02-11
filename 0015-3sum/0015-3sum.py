@@ -34,39 +34,3 @@ class Solution(object):
                     while nums[j]==nums[j-1] and j<k:
                         j+=1
         return result
-
-
-        
-        
-        
-        
-        
-        
-        
-        # input: list of numbers
-        # output: list of lists that contain triplets that sum up to 0
-        # M: two pointer method
-        # sort first: [-4,-1,-1,0,1,2]
-        # start->i, j=i+1, end->k
-        # check if sum of i, j and k>0 or<, move accordingly
-        # if sum==0: append to result list [values of i,j,k]
-
-        # result = []
-        # nums = sorted(nums)
-        # for i in range(len(nums)):
-        #     a = nums[i]
-        #     if i>0 and a==nums[i-1]:
-        #         continue
-        #     j=i+1
-        #     k=len(nums)-1
-        #     while j<k:
-        #         if a+nums[j]+nums[k]>0:
-        #             k-=1
-        #         elif a+nums[j]+nums[k]<0:
-        #             j+=1
-        #         else:
-        #             result.append([a, nums[j], nums[k]])
-        #             j+=1
-        #             if nums[j]==nums[j-1] and j<k:
-        #                 j+=1
-        # return result
