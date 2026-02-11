@@ -1,29 +1,72 @@
-class Solution:
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
-        # Sort array
-        nums = sorted(nums)
+class Solution(object):
+    def threeSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        # input: nums
+        # output: triplets that sum up to 0
+        # nums = sorted(nums) nlogn
+        # result = []
+        # [-4, -1, -1, 0, 1,2]
+        # i from 0 to nums len, j at i+1 till j<k, k at end
+        # check that nums[i]!=nums[i-1] 
+        # check if nums[j]+nums[i]+nums[k]==0
+        # if yes, then append triplet to result
+        # now increase j and check nums[j]!=nums[j-1] and j<k for duplicates
+        # if nums[j]+nums[i]+nums[k]>0-> k reduce
+        # if nums[j]+nums[i]+nums[k]<0-> j increase
         result = []
-        # Start by fixing a and having a left and right pointer
+        nums = sorted(nums)
         for i in range(len(nums)):
-            a = nums[i]
-            # Make sure that there are no duplicates
-            if i>0 and a==nums[i-1]:
+            if i>0 and nums[i]==nums[i-1]:
                 continue
-            # Initialize left and right pointers
-            left = i+1
-            right = len(nums)-1
-            # Check 3sum, move pointers accordingly
-            while left<right:
-                if nums[left]+nums[right]+a>0:
-                    right-=1
-                elif nums[left]+nums[right]+a<0:
-                    left+=1
+            j=i+1
+            k = len(nums)-1
+            while j<k:
+                if nums[i]+nums[j]+nums[k]>0:
+                    k-=1
+                elif nums[i]+nums[j]+nums[k]<0:
+                    j+=1
                 else:
-                    result.append([nums[left], nums[right], a])
-                    left+=1
-                    # check that the next left pointer is not same as previous
-                    while nums[left]==nums[left-1] and left<right:
-                        left+=1
+                    result.append([nums[i], nums[j], nums[k]])
+                    j+=1
+                    while nums[j]==nums[j-1] and j<k:
+                        j+=1
         return result
 
 
+        
+        
+        
+        
+        
+        
+        
+        # input: list of numbers
+        # output: list of lists that contain triplets that sum up to 0
+        # M: two pointer method
+        # sort first: [-4,-1,-1,0,1,2]
+        # start->i, j=i+1, end->k
+        # check if sum of i, j and k>0 or<, move accordingly
+        # if sum==0: append to result list [values of i,j,k]
+
+        # result = []
+        # nums = sorted(nums)
+        # for i in range(len(nums)):
+        #     a = nums[i]
+        #     if i>0 and a==nums[i-1]:
+        #         continue
+        #     j=i+1
+        #     k=len(nums)-1
+        #     while j<k:
+        #         if a+nums[j]+nums[k]>0:
+        #             k-=1
+        #         elif a+nums[j]+nums[k]<0:
+        #             j+=1
+        #         else:
+        #             result.append([a, nums[j], nums[k]])
+        #             j+=1
+        #             if nums[j]==nums[j-1] and j<k:
+        #                 j+=1
+        # return result
