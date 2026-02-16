@@ -19,6 +19,6 @@ class Solution(object):
             elif nums[i]==2:
                 nums[R], nums[i]=nums[i], nums[R]
                 R-=1
-                i-=1
+                i-=1 # needs to check swapped element
             i+=1
         return nums
