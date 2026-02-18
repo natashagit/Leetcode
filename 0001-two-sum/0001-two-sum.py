@@ -18,9 +18,11 @@ class Solution(object):
         for i in range(len(nums)):
             if target-nums[i] in dict_nums:
                 return [i, dict_nums[target-nums[i]]]
-            dict_nums[nums[i]]=i
+            if nums[i] not in dict_nums:
+                dict_nums[nums[i]]=i
         
 
+    
 
 
 
