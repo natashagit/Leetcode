@@ -4,11 +4,15 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        l = 0
+        # input: nums list
+        # output: max number of consecutive ones
+        # 
+        current = 0
         max_length = 0
-        for r in range(len(nums)):
-            if nums[r]==1:
-                max_length = max(max_length, r-l+1)
+        for i in range(len(nums)):
+            if nums[i]==1:
+                current+=1
+                max_length = max(max_length, current)
             else:
-                l = r+1
+                current=0
         return max_length
