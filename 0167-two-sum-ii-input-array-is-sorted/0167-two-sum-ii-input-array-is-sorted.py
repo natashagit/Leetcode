@@ -7,7 +7,8 @@ class Solution(object):
         """
         # input: sorted numbers array, target sum
         # output: return [index1+1, index2+1] of values adding up to target
-        # binary search
+        # could be done with dictionary - but O(n) space
+        # binary search will make it O(1) space
         # two ptrs, from start and end
         # while start<end
         # if sum of the two > target-> reduce end
