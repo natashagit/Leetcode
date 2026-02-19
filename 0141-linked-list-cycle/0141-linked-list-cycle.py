@@ -10,19 +10,19 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
-        # input: head of LL
-        # output: true/false if there is a cycle detected
-        # edge cases: empty list or one element
-
+        # input: head of linked list
+        # output: true/false for linked list cycle
+        # can use a slow and fast pointer
+        # fast pointer moves at double the pace of the slow pointer, so it be ahead
+        # there will be a point where these two meet, then its a cycle
         dummy = head
         if dummy is None or dummy.next is None:
             return False
-
+        
         slow = fast = head
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
             if slow==fast:
                 return True
-        
         return False
