@@ -11,6 +11,45 @@ class Solution(object):
         :rtype: Optional[ListNode]
         """
         # input: two ll
+        # output: sum of two numbers in form of ll
+        # create dummy node
+        # loop while lists or carry exists
+        # Add digits and carry
+        # create new node
+        # move pointers
+        # return dummy.next
+        dummy = ListNode(0)
+        current = dummy
+        carry = 0
+        while l1 or l2 or carry:
+
+            if l1:
+                val1 = l1.val
+            else:
+                val1 = 0
+
+            if l2:
+                val2 = l2.val
+            else:
+                val2 = 0
+            
+            total = val1 + val2 + carry
+            carry = total//10
+
+            current.next = ListNode(total%10)
+            current = current.next
+
+            if l1:
+                l1 = l1.next
+
+            if l2:
+                l2 = l2.next
+        
+        return dummy.next
+
+
+
+        # input: two ll
         # output: ll in reverse order of sum of the number formed by the digits in the reversed two lls
         # edge case: empty list
         
@@ -25,41 +64,41 @@ class Solution(object):
         # split number by taking mod by 10 and store in ll
         # keep updating number 
 
-        def reverse(ll):
-            prev = None
-            curr = ll
-            n=0
-            while curr:
-                n+=1
-                next_ptr = curr.next
-                curr.next = prev
-                prev = curr
-                curr = next_ptr
-            return prev, n
+        # def reverse(ll):
+        #     prev = None
+        #     curr = ll
+        #     n=0
+        #     while curr:
+        #         n+=1
+        #         next_ptr = curr.next
+        #         curr.next = prev
+        #         prev = curr
+        #         curr = next_ptr
+        #     return prev, n
         
-        def calculate_sum(ll, n):
-            result_sum = 0
-            curr = ll
-            while curr:
-                result_sum += curr.val*((10)**n)
-                n-=1
-                curr = curr.next
-            return result_sum
+        # def calculate_sum(ll, n):
+        #     result_sum = 0
+        #     curr = ll
+        #     while curr:
+        #         result_sum += curr.val*((10)**n)
+        #         n-=1
+        #         curr = curr.next
+        #     return result_sum
         
-        rev_l1, n1 = reverse(l1)
-        rev_l2, n2 = reverse(l2)
+        # rev_l1, n1 = reverse(l1)
+        # rev_l2, n2 = reverse(l2)
 
-        final_sum = calculate_sum(rev_l1, n1-1)+calculate_sum(rev_l2, n2-1)
-        dummy = ListNode(0)
-        curr = dummy
+        # final_sum = calculate_sum(rev_l1, n1-1)+calculate_sum(rev_l2, n2-1)
+        # dummy = ListNode(0)
+        # curr = dummy
 
-        if final_sum == 0:
-            return ListNode(0)
+        # if final_sum == 0:
+        #     return ListNode(0)
 
-        while final_sum>0:
-            rem = final_sum%10
-            curr.next = ListNode(rem)
-            curr = curr.next
-            final_sum = final_sum//10
+        # while final_sum>0:
+        #     rem = final_sum%10
+        #     curr.next = ListNode(rem)
+        #     curr = curr.next
+        #     final_sum = final_sum//10
         
-        return dummy.next
+        # return dummy.next
