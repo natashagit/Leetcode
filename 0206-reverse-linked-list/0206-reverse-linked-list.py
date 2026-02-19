@@ -18,7 +18,7 @@ class Solution(object):
         # set the current's next to the previous pointer
         # set the current as the NEXT pointer
         # set the previous as current
-        # return the previous's next 
+        # return the previous 
 
         previous = None
         current = head
