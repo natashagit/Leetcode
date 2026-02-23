@@ -13,27 +13,24 @@ class Solution(object):
         :type head: Node
         :rtype: Node
         """
-        # input: ll with random ptr
-        # output: deep copy of the ll including the random ptr
-        # edge case: empty list
+        # input: linked list with node val, random ptr
+        # output: deep copy of the same
+        # 2 passes
+        # first pass: create copies of nodes as hashmap to new nodes
+        # second pass: set random and next pointers 
 
-        # hashmap to store the ll
-        # create copies of nodes and store into hashmap old Node:new Node
-        # assign next and random ptrs by mapping the each copy to the next and random ptr
-        # return the new copy of head
-
-        copymap = {None: None}
-
-        old = head
-        while old:
-            copymap[old] = Node(old.val)
-            old = old.next
-        
+        copy_list = {None: None}
         curr = head
         while curr:
-            copymap[curr].next = copymap[curr.next]
-            copymap[curr].random = copymap[curr.random]
+            copy = Node(curr.val)
+            copy_list[curr] = copy
+            curr = curr.next
+
+        curr = head
+        while curr:
+            copy = copy_list[curr]
+            copy.next = copy_list[curr.next]
+            copy.random = copy_list[curr.random]
             curr = curr.next
         
-        return copymap[head]
-        
+        return copy_list[head]
