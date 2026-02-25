@@ -1,16 +1,20 @@
-class Solution:
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
-        leftproduct = [1]*len(nums)
-        rightproduct = [1]*len(nums)
-        final = []
-        # Take product of all elements to the left
-        for i in range(1, len(nums)):
-            leftproduct[i] = nums[i-1]*leftproduct[i-1]
-        # Take product of all elements to the right
-        for i in range(len(nums)-2, -1, -1):
-            rightproduct[i] = nums[i+1]*rightproduct[i+1]
-        # Take pairwise product of both
-        for i in range(len(nums)):
-            final.append(leftproduct[i]*rightproduct[i])
+class Solution(object):
+   
+    def productExceptSelf(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        left_product = [1 for i in range(len(nums))]
+        right_product = [1 for i in range(len(nums))]
+        final_product = []
 
-        return final
+        for i in range(1, len(nums)):
+            left_product[i] = left_product[i-1]*nums[i-1]
+        for i in range(len(nums)-2, -1, -1):
+            right_product[i] = right_product[i+1]*nums[i+1]
+        
+        for i in range(len(nums)):
+            final_product.append(left_product[i] * right_product[i])
+        
+        return final_product
