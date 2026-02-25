@@ -15,7 +15,7 @@ class Solution(object):
         # create maxleft array by looping from start and storing maxvalue seen at every index
         # create maxright array by looping form end and storing maxvalue seen at every index
         # finally calculate the area by summing up the area at every index by taking the minimum of maxleft and maxright and reducing the current index height from it
-        if len(height)==0 or len(height)==1:
+        if len(height)<=1:
             return 0
         maxLeft = [0]*len(height)
         maxRight = [0]*len(height)
