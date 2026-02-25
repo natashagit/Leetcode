@@ -24,19 +24,18 @@ class Solution(object):
         # left and right pointer
         l = r = 0 
         output = []
-        # moving right pointer ahead
-        while r<len(nums):
+
+        while r<len(nums): # moving right pointer ahead
             # while q is not empty and the value being pushed>previous existing value
             while q and nums[q[-1]]<nums[r]:
-                # remove previous smaller value and append index of new one
-                q.pop()
+                q.pop() # remove previous smaller value and append index of new one
             q.append(r)
-            # if the left pointer moved ahead of window size
-            if l>q[0]:
-                # remove left val from window
-                q.popleft()
+            
+            if l>q[0]:  # if the left pointer moved ahead of window size
+                q.popleft() # remove left val from window
+           
             # if window size achieved then add the max value which is at start of queue to the output array
-            if (r+1)>=k:
+            if (r+1)>=k: 
                 output.append(nums[q[0]])
                 l+=1
             r+=1
