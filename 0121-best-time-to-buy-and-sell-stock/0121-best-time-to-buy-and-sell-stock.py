@@ -4,15 +4,14 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        # input: prices array
-        # output: max profit made when selling at high and buying at low
+        # input: array of prices on each day i
+        # output: maximum profit
+        min_price = float("inf")
         max_profit = 0
-        left = 0
-        for right in range(1, len(prices)):
-            if prices[right]-prices[left]>0:
-                max_profit = max(max_profit, prices[right]-prices[left])
-            else:
-                left=right
+        for p in prices:
+            max_profit = max(max_profit, (p-min_price))
+            min_price = min(p, min_price)
+
         return max_profit
 
         
