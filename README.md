@@ -59,6 +59,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/natashagit/Leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0485-max-consecutive-ones](https://github.com/natashagit/Leetcode/tree/master/0485-max-consecutive-ones) |
 | [0525-contiguous-array](https://github.com/natashagit/Leetcode/tree/master/0525-contiguous-array) |
+| [0528-random-pick-with-weight](https://github.com/natashagit/Leetcode/tree/master/0528-random-pick-with-weight) |
 | [0560-subarray-sum-equals-k](https://github.com/natashagit/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0605-can-place-flowers](https://github.com/natashagit/Leetcode/tree/master/0605-can-place-flowers) |
 | [0621-task-scheduler](https://github.com/natashagit/Leetcode/tree/master/0621-task-scheduler) |
@@ -163,6 +164,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/natashagit/Leetcode/tree/master/0238-product-of-array-except-self) |
 | [0304-range-sum-query-2d-immutable](https://github.com/natashagit/Leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0525-contiguous-array](https://github.com/natashagit/Leetcode/tree/master/0525-contiguous-array) |
+| [0528-random-pick-with-weight](https://github.com/natashagit/Leetcode/tree/master/0528-random-pick-with-weight) |
 | [0560-subarray-sum-equals-k](https://github.com/natashagit/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0724-find-pivot-index](https://github.com/natashagit/Leetcode/tree/master/0724-find-pivot-index) |
 | [0731-my-calendar-ii](https://github.com/natashagit/Leetcode/tree/master/0731-my-calendar-ii) |
@@ -290,6 +292,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0209-minimum-size-subarray-sum](https://github.com/natashagit/Leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0268-missing-number](https://github.com/natashagit/Leetcode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/natashagit/Leetcode/tree/master/0287-find-the-duplicate-number) |
+| [0528-random-pick-with-weight](https://github.com/natashagit/Leetcode/tree/master/0528-random-pick-with-weight) |
 | [0731-my-calendar-ii](https://github.com/natashagit/Leetcode/tree/master/0731-my-calendar-ii) |
 | [0875-koko-eating-bananas](https://github.com/natashagit/Leetcode/tree/master/0875-koko-eating-bananas) |
 | [0981-time-based-key-value-store](https://github.com/natashagit/Leetcode/tree/master/0981-time-based-key-value-store) |
@@ -346,6 +349,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0202-happy-number](https://github.com/natashagit/Leetcode/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/natashagit/Leetcode/tree/master/0268-missing-number) |
 | [0371-sum-of-two-integers](https://github.com/natashagit/Leetcode/tree/master/0371-sum-of-two-integers) |
+| [0528-random-pick-with-weight](https://github.com/natashagit/Leetcode/tree/master/0528-random-pick-with-weight) |
 | [0973-k-closest-points-to-origin](https://github.com/natashagit/Leetcode/tree/master/0973-k-closest-points-to-origin) |
 ## Bit Manipulation
 |  |
@@ -563,4 +567,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/natashagit/Leetcode/tree/master/0239-sliding-window-maximum) |
+## Randomized
+|  |
+| ------- |
+| [0528-random-pick-with-weight](https://github.com/natashagit/Leetcode/tree/master/0528-random-pick-with-weight) |
 <!---LeetCode Topics End-->
