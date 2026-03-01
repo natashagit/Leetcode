@@ -75,6 +75,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0994-rotting-oranges](https://github.com/natashagit/Leetcode/tree/master/0994-rotting-oranges) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/natashagit/Leetcode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [2102-find-the-middle-index-in-array](https://github.com/natashagit/Leetcode/tree/master/2102-find-the-middle-index-in-array) |
+| [2300-successful-pairs-of-spells-and-potions](https://github.com/natashagit/Leetcode/tree/master/2300-successful-pairs-of-spells-and-potions) |
 | [2358-number-of-ways-to-split-array](https://github.com/natashagit/Leetcode/tree/master/2358-number-of-ways-to-split-array) |
 ## String
 |  |
@@ -122,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0846-hand-of-straights](https://github.com/natashagit/Leetcode/tree/master/0846-hand-of-straights) |
 | [0883-car-fleet](https://github.com/natashagit/Leetcode/tree/master/0883-car-fleet) |
 | [0973-k-closest-points-to-origin](https://github.com/natashagit/Leetcode/tree/master/0973-k-closest-points-to-origin) |
+| [2300-successful-pairs-of-spells-and-potions](https://github.com/natashagit/Leetcode/tree/master/2300-successful-pairs-of-spells-and-potions) |
 ## Hash Table
 |  |
 | ------- |
@@ -213,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/natashagit/Leetcode/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/natashagit/Leetcode/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/natashagit/Leetcode/tree/master/0680-valid-palindrome-ii) |
+| [2300-successful-pairs-of-spells-and-potions](https://github.com/natashagit/Leetcode/tree/master/2300-successful-pairs-of-spells-and-potions) |
 ## Greedy
 |  |
 | ------- |
@@ -296,6 +299,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0731-my-calendar-ii](https://github.com/natashagit/Leetcode/tree/master/0731-my-calendar-ii) |
 | [0875-koko-eating-bananas](https://github.com/natashagit/Leetcode/tree/master/0875-koko-eating-bananas) |
 | [0981-time-based-key-value-store](https://github.com/natashagit/Leetcode/tree/master/0981-time-based-key-value-store) |
+| [2300-successful-pairs-of-spells-and-potions](https://github.com/natashagit/Leetcode/tree/master/2300-successful-pairs-of-spells-and-potions) |
 ## Linked List
 |  |
 | ------- |
