@@ -72,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/natashagit/Leetcode/tree/master/0739-daily-temperatures) |
 | [0846-hand-of-straights](https://github.com/natashagit/Leetcode/tree/master/0846-hand-of-straights) |
 | [0875-koko-eating-bananas](https://github.com/natashagit/Leetcode/tree/master/0875-koko-eating-bananas) |
+| [0881-boats-to-save-people](https://github.com/natashagit/Leetcode/tree/master/0881-boats-to-save-people) |
 | [0883-car-fleet](https://github.com/natashagit/Leetcode/tree/master/0883-car-fleet) |
 | [0973-k-closest-points-to-origin](https://github.com/natashagit/Leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [0994-rotting-oranges](https://github.com/natashagit/Leetcode/tree/master/0994-rotting-oranges) |
@@ -124,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/natashagit/Leetcode/tree/master/0621-task-scheduler) |
 | [0645-set-mismatch](https://github.com/natashagit/Leetcode/tree/master/0645-set-mismatch) |
 | [0846-hand-of-straights](https://github.com/natashagit/Leetcode/tree/master/0846-hand-of-straights) |
+| [0881-boats-to-save-people](https://github.com/natashagit/Leetcode/tree/master/0881-boats-to-save-people) |
 | [0883-car-fleet](https://github.com/natashagit/Leetcode/tree/master/0883-car-fleet) |
 | [0973-k-closest-points-to-origin](https://github.com/natashagit/Leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [2300-successful-pairs-of-spells-and-potions](https://github.com/natashagit/Leetcode/tree/master/2300-successful-pairs-of-spells-and-potions) |
@@ -219,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/natashagit/Leetcode/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/natashagit/Leetcode/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/natashagit/Leetcode/tree/master/0680-valid-palindrome-ii) |
+| [0881-boats-to-save-people](https://github.com/natashagit/Leetcode/tree/master/0881-boats-to-save-people) |
 | [2300-successful-pairs-of-spells-and-potions](https://github.com/natashagit/Leetcode/tree/master/2300-successful-pairs-of-spells-and-potions) |
 ## Greedy
 |  |
@@ -234,6 +237,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0678-valid-parenthesis-string](https://github.com/natashagit/Leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0680-valid-palindrome-ii](https://github.com/natashagit/Leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0846-hand-of-straights](https://github.com/natashagit/Leetcode/tree/master/0846-hand-of-straights) |
+| [0881-boats-to-save-people](https://github.com/natashagit/Leetcode/tree/master/0881-boats-to-save-people) |
 ## Stack
 |  |
 | ------- |
