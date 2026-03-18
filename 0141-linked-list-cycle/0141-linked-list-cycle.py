@@ -10,17 +10,12 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
-        # input: head of linked list
-        # output: true/false for linked list cycle
-        # can use a slow and fast pointer
-        # fast pointer moves at double the pace of the slow pointer, so it be ahead
-        # there will be a point where these two meet, then its a cycle
-        # edge cases: empty list or one element
-        dummy = head
-        if dummy is None or dummy.next is None:
-            return False
-        
-        slow = fast = head
+        # input: head
+        # output: true/false if linked list is a cycle
+        # edge cases: empty list, one element
+        # slow and fast pointer at double the speed and if they intersect then there is a cycle
+        slow = head
+        fast = head
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
