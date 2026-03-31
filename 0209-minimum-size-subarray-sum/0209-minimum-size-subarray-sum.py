@@ -5,26 +5,23 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        # input: nums, target
-        # output: minimum length of subarray whose sum is>=target
-        # nums all elements are positive
-        # two pointer approach and keep window
-        # left at start
-        # right move through nums
-        # if the sum upto right>=target -> shrink window from left and keep count of the size-> r-l 
+        # input: nums array, target
+        # output: minimum length of the array that has a sum>=7, else 0
+        # window -> add elements to the window on the right till sum>=7
+        # note the size of window
+        # remove element from window from the left
+        window = 0
         left = 0
-        curr_sum = 0
-        result_len = float("inf")
-        for right in range(len(nums)):
-            curr_sum+=nums[right]
-            while curr_sum>=target:
-                result_len = min(result_len, right-left+1)
-                curr_sum-=nums[left]
+        length = 0
+        min_length = float("inf")
+        right = 0
+        while right<len(nums):
+            window+=nums[right]
+            while window>=target:
+                length = right - left + 1
+                min_length = min(length, min_length)
+                window-=nums[left]
                 left+=1
-        if result_len==float("inf"):
-            return 0
-        else:
-            return result_len
-                
-        
-        
+            right+=1
+            
+        return 0 if min_length==float("inf") else min_length
