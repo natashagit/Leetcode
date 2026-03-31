@@ -36,9 +36,9 @@ class Solution(object):
             temp1 = first_half.next
             first_half.next = second_half
             temp2 = second_half.next
-            first_half  = temp1
-            second_half.next = first_half
+            second_half.next = temp1
             second_half = temp2
+            first_half = temp1
 
         return head
 
