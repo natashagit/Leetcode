@@ -4,23 +4,12 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        # input: nums array
-        # output: pivot index which equally divides with sum equal on both sides of pivot, else -1
-        # constraints: array size 1, negative numbers
-        # edge cases: one element, index return 0
-        # two pointer won't work since negative numbers present
-        # take sum of all elements
-        # left sum assign to 0
-        # loop through nums
-        # check if sum-left sum-pivot == left sum
-        # if yes then return pivot
-        # else increase left sum by adding element to it
-
-        left_sum = 0
+        # input: nums
+        # output: pivot index: left elements=right elements of pivot index
         total_sum = sum(nums)
+        pref_sum=0
         for i in range(len(nums)):
-            right_sum = total_sum-left_sum-nums[i]
-            if right_sum == left_sum:
+            if total_sum-pref_sum-nums[i]==pref_sum:
                 return i
-            left_sum+=nums[i]
+            pref_sum+=nums[i]
         return -1
