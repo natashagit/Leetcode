@@ -105,6 +105,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/natashagit/Leetcode/tree/master/0242-valid-anagram) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/natashagit/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0424-longest-repeating-character-replacement](https://github.com/natashagit/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
+| [0443-string-compression](https://github.com/natashagit/Leetcode/tree/master/0443-string-compression) |
 | [0567-permutation-in-string](https://github.com/natashagit/Leetcode/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/natashagit/Leetcode/tree/master/0647-palindromic-substrings) |
 | [0678-valid-parenthesis-string](https://github.com/natashagit/Leetcode/tree/master/0678-valid-parenthesis-string) |
@@ -225,6 +226,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/natashagit/Leetcode/tree/master/0234-palindrome-linked-list) |
 | [0287-find-the-duplicate-number](https://github.com/natashagit/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0295-find-median-from-data-stream](https://github.com/natashagit/Leetcode/tree/master/0295-find-median-from-data-stream) |
+| [0443-string-compression](https://github.com/natashagit/Leetcode/tree/master/0443-string-compression) |
 | [0567-permutation-in-string](https://github.com/natashagit/Leetcode/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/natashagit/Leetcode/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/natashagit/Leetcode/tree/master/0680-valid-palindrome-ii) |
