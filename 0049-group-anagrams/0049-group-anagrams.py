@@ -10,13 +10,10 @@ class Solution(object):
         :type strs: List[str]
         :rtype: List[List[str]]
         """
-        dict_strs = {}
-        for i in strs:
-            if ''.join(sorted(i)) in dict_strs:
-                dict_strs[''.join(sorted(i))].append(i)
+        dict_s = {}
+        for s in strs:
+            if ''.join(sorted(s)) in dict_s:
+                dict_s[''.join(sorted(s))].append(s)
             else:
-                dict_strs[''.join(sorted(i))]=[i]
-        return list(dict_strs.values())
-
-
-        
+                dict_s[''.join(sorted(s))] = [s]
+        return list(dict_s.values())
