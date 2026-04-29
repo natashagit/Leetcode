@@ -1,15 +1,25 @@
-class Solution:
-    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+class Solution(object):
+    def wordBreak(self, s, wordDict):
+        """
+        :type s: str
+        :type wordDict: List[str]
+        :rtype: bool
+        """
+        # wordDict = {"cats","dog","sand","and","cat"}
+        #     c    a      t      s      a      n          d        o         g 
+        #    0     1      2       3     4      5        6          7         8     9
+        # [True  False  False   True  True    False     False     True    False   False]
+        #                                                                    i
+        #    j                              
+
+        wordDict = set(wordDict)
         dp = [False]*(len(s)+1)
         dp[0] = True
         for i in range(len(s)+1):
             for j in range(i):
-                if dp[j] and s[j:i] in wordDict:
+                if dp[j]==True and s[j:i] in wordDict:
                     dp[i] = True
                     break
         return dp[-1]
 
-        #       0   h   e   l   l   o   w   o   r   l   d 
-        # dp = [T   F   T   F   T   T   F   F   F   F   T]
-        #                               j               i
-        # wordDict = ['he', 'world', 'ello', 'he', 'lo', 'll']
+        
