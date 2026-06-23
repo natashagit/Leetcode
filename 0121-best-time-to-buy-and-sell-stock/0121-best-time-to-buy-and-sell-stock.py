@@ -4,17 +4,13 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        # input: array of prices on each day i
+        # input: prices of stock on each day
         # output: maximum profit
-        min_price = float("inf")
+        # if only one element
+        # if only 2 elements
         max_profit = 0
-        for p in prices:
-            max_profit = max(max_profit, (p-min_price))
-            min_price = min(p, min_price)
-
+        min_price = prices[0]
+        for i in range(1, len(prices)):
+            max_profit = max(prices[i]-min_price,max_profit)
+            min_price = min(prices[i], min_price)
         return max_profit
-
-        
-        
-
-
