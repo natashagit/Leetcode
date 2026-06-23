@@ -5,32 +5,16 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        # input: array nums, target integer
-        # output: indices of the two numbers-> target
-        # negatives and duplicates
-        # constraints on input nums size -> 10^4 : less than O(n^2)
-        # naive approach: check every pair (i, j) O(n^2)
-        # optimized approach: hashmap to store the number, index; For each number, we want to know if we’ve already seen target - number
-        # keep hashmap seen
-        # for each index i in nums
-        # need = target - nums[i]
-        # if need is in seen: return seen[need], i
-        # avoids using same element twice
-
-        seen = {}
-        for i in range(len(nums)):
-            need = target - nums[i]
-            if need in seen:
-                return [i, seen[need]]
-            seen[nums[i]] = i
+        # restate problem:
+        # input: array + target value
+        # output: indexes whose values sum up to the target
+        # assumptions:
+        # duplicates allowed
+        # negative yes
+        # no match - return empty array
+        dict_map = {} # [-3, 4, 3] , 0
+        for i in range(len(nums)): #-3
+            if (target - nums[i]) in dict_map:
+                return [i, dict_map[(target - nums[i])]] #[2,1]
+            dict_map[nums[i]] = i # {3:0, 2:1}
         return []
-
-        
-
-    
-
-
-
-
-
-    
