@@ -4,25 +4,31 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        # input: string, which needs to be cleaned up
-        # output: true/false 
-        # edge case: one letter, empty-> true
-
-        # preprocess string by removing non alphanumeric chars
-        # left point and right pointer at start and end of string
-        # loop through till left!=right pointer
-        # keep checking if the value is not equal-> return False
-        # In the end return True
-
-        s = "".join([i for i in s if i.isalnum()])
-        s = s.lower()
-        if len(s)<=1:
-            return True
+        # empty string and single char- true
+        # numbers?
+        # Brute force
+        # clean the string
+        # compare string with its reverse
+        # O(n) time and O(n) space
+        # Optimal approach
+        # two pointers from start and end
+        # keep checking if not alphanumberic and skip the spaces
+        # check lower case left and right strings
+        # O(n) time and O(1) space
         left = 0
         right = len(s)-1
+
         while left<right:
-            if s[left]!=s[right]:
+            while left<right and not s[left].isalnum():
+                left+=1
+
+            while left<right and not s[right].isalnum():
+                right-=1
+            
+            if s[left].lower()!=s[right].lower():
                 return False
             left+=1
             right-=1
         return True
+        
+            
