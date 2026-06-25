@@ -23,11 +23,7 @@ class Solution(object):
         # O(nlogn)
         # Optimal approach
         # make a set of array
-        # find the highest number and check if num-1 present
-        # 200->199
-        # next highest number
-        # 100-> 99
-        # 4-3-2-1 length+=1 -> maxlength
+        # for value in array check if value-1 in array-> if not, then start and check value+1 onwards and increase length 
 
         maxlength = 0
         length = 0
@@ -42,5 +38,5 @@ class Solution(object):
                     length+=1
             
                 maxlength = max(length, maxlength)
-                
+
         return maxlength
