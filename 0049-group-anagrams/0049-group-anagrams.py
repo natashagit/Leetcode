@@ -1,19 +1,33 @@
 class Solution(object):
-    # input: array of strings strs
-    # output: list of lists having similar anagrams together
-    # loop through the list of strs
-    # have a dict to store the key as sorted(str) with the values as the str
-    # keep checking if sorted(str) already present in the dict, then just append the str to the values
-    # return the list of all the values
+    
     def groupAnagrams(self, strs):
         """
         :type strs: List[str]
         :rtype: List[List[str]]
         """
-        dict_s = {}
+        # input: list of strings
+        # output: strings grouped by anagrams 
+        # duplicate strings also include
+        # empty strings output as it is
+        # all lower case
+        # order of words in grps does not matter
+        # brute: compare every string with every other string by sorting and checking O(n^2 * klogk)
+        # optimal
+        # loop through strs
+        # add the sorted word in dict with value and append the word seen
+        # check if the sorted word is in the dict, if yes then append as value to that sorted word
+        # if not then add it into dictionary
+        # O(n)
+        hashmap = {}
+        from collections import Counter
         for s in strs:
-            if ''.join(sorted(s)) in dict_s:
-                dict_s[''.join(sorted(s))].append(s)
+            key = "".join(sorted(s))
+            if key in hashmap:
+                hashmap[key].append(s)
             else:
-                dict_s[''.join(sorted(s))] = [s]
-        return list(dict_s.values())
+                hashmap[key] = [s]
+        return hashmap.values()
+
+                
+        
+
