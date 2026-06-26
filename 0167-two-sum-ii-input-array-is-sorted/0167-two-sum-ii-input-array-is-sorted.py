@@ -5,22 +5,24 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        # input: sorted numbers array, target sum
-        # output: return [index1+1, index2+1] of values adding up to target
-        # could be done with dictionary - but O(n) space
-        # binary search will make it O(1) space
-        # two ptrs, from start and end
-        # while start<end
-        # if sum of the two > target-> reduce end
-        # else increment start
-        # else return [start+1, end+1]
-        start = 0
-        end = len(numbers)-1
-        while start<end:
-            if numbers[start]+numbers[end]>target:
-                end-=1
-            elif numbers[start]+numbers[end]<target:
-                start+=1
+        # input: array of numbers, target
+        # output: indices of the two numbers that sum up to the target
+        # ascending order
+        # size of the array?
+        # empty array -> []
+        # [1] -> []
+        # negative numbers
+        # Brute force
+        # check for every element - O(n^2)
+        # Optimal 
+        # left and right pointer
+        left = 0
+        right = len(numbers)-1
+        while left<right:
+            if numbers[left]+numbers[right]>target:
+                right-=1
+            elif numbers[left]+numbers[right]<target:
+                left+=1
             else:
-                return [start+1, end+1]
+                return [left+1, right+1]
         return []
