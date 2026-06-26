@@ -4,18 +4,28 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
+        # input: s
+        # output: valid or not
+        # no other chars
+        # empty string -> true
+        # optimal
+        # if char open bracket, push to stack
+        # if close bracket, check if last element in stack is the open match for it
+        # check the dictionary which has key close:open
+        # if u reach end of string -> check if stack not empty -> false
+        dict_bracket = {"}":"{", "]":"[", ")":"("}
         stack = []
-        dict_brackets = {'}':'{',']':'[',')':'('}
         for i in range(len(s)):
-            if s[i] in dict_brackets:
-                if len(stack)==0:
-                    return False
-                if stack[-1]==dict_brackets[s[i]]:
+            if s[i] not in dict_bracket:
+                stack.append(s[i])
+            else:
+                if stack and stack[-1]==dict_bracket[s[i]]:
                     stack.pop()
                 else:
                     return False
-            else:
-                stack.append(s[i])
         if stack:
             return False
         return True
+
+
+        
