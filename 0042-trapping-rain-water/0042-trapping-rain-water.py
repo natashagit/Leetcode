@@ -4,50 +4,43 @@ class Solution(object):
         :type height: List[int]
         :rtype: int
         """
-        # input: list of heights
-        # output: total area of water trapped in between
-        # height-> 0, -ve, one one element in height
-        # input size->10^4 O(n)
-        # water limited by tallest wall on left or right of it
-        # min of maxleft, maxright at every point will determine the area at that point
-        # keep an array to store maxleft elements
-        # keep an array to store maxright elements
-        # create maxleft array by looping from start and storing maxvalue seen at every index
-        # create maxright array by looping form end and storing maxvalue seen at every index
-        # finally calculate the area by summing up the area at every index by taking the minimum of maxleft and maxright and reducing the current index height from it
-        # TC: O(n) and SC: O(n)
+        # input: heights of the walls
+        # output: total water trapped between the walls
+        # no negative values
+        # one wall -> 0
+        # no wall -> 0
+        # brute force
+        # So we take the maximum height on left and right and subtract the current index height from the minimum of the left and right heights to get the area
+        # O(n^2) - scanning left and right for maximum
+        # maxLeft = 0
+        # maxRight = 0
         
-        # if len(height)<=1:
-        #     return 0
-        # maxLeft = [0]*len(height)
-        # maxRight = [0]*len(height)
-        # maxLeft[0] = height[0]
-        # maxRight[len(height)-1] = height[len(height)-1]
-        # area = 0
-
-        # for i in range(1, len(height)):
-        #     maxLeft[i] = max(maxLeft[i-1], height[i])
-        # for i in range(len(height)-2, -1, -1):
-        #     maxRight[i] = max(maxRight[i+1], height[i])
-        
+        # total_water = 0
         # for i in range(len(height)):
-        #     area+=min(maxLeft[i], maxRight[i])-height[i]
-        # return area
+        #     maxLeft = max(height[:i+1])
+        #     maxRight = max(height[i:])
+        #     total_water += min(maxLeft, maxRight)-height[i]
+        # return total_water
 
-
-        # SC: O(1) soln
+        # Optimal
+        maxLeft = height[0]
+        maxRight = height[len(height)-1]
         left = 0
+        total = 0
         right = len(height)-1
-        maxLeft = 0
-        maxRight = 0
-        area = 0
         while left<right:
-            if height[left]<=height[right]:
-                maxLeft = max(height[left], maxLeft)
-                area+= (maxLeft-height[left])
+            if maxLeft <maxRight:
+                total += maxLeft-height[left]
                 left+=1
+                maxLeft = max(height[left], maxLeft)
             else:
-                maxRight = max(height[right], maxRight)
-                area+= (maxRight-height[right])
+                total += maxRight-height[right]
                 right-=1
-        return area
+                maxRight = max(height[right], maxRight)
+        return total
+
+
+
+
+            
+            
