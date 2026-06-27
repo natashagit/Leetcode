@@ -70,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/natashagit/Leetcode/tree/master/0621-task-scheduler) |
 | [0645-set-mismatch](https://github.com/natashagit/Leetcode/tree/master/0645-set-mismatch) |
 | [0695-max-area-of-island](https://github.com/natashagit/Leetcode/tree/master/0695-max-area-of-island) |
+| [0704-binary-search](https://github.com/natashagit/Leetcode/tree/master/0704-binary-search) |
 | [0724-find-pivot-index](https://github.com/natashagit/Leetcode/tree/master/0724-find-pivot-index) |
 | [0731-my-calendar-ii](https://github.com/natashagit/Leetcode/tree/master/0731-my-calendar-ii) |
 | [0739-daily-temperatures](https://github.com/natashagit/Leetcode/tree/master/0739-daily-temperatures) |
@@ -330,6 +331,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/natashagit/Leetcode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/natashagit/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0528-random-pick-with-weight](https://github.com/natashagit/Leetcode/tree/master/0528-random-pick-with-weight) |
+| [0704-binary-search](https://github.com/natashagit/Leetcode/tree/master/0704-binary-search) |
 | [0731-my-calendar-ii](https://github.com/natashagit/Leetcode/tree/master/0731-my-calendar-ii) |
 | [0875-koko-eating-bananas](https://github.com/natashagit/Leetcode/tree/master/0875-koko-eating-bananas) |
 | [0981-time-based-key-value-store](https://github.com/natashagit/Leetcode/tree/master/0981-time-based-key-value-store) |
