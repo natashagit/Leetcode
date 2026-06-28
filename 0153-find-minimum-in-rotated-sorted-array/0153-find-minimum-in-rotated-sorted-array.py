@@ -4,12 +4,15 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        left = 0
-        right = len(nums)-1
-        while left<right:
-            mid = (left+right)//2
-            if nums[mid]>nums[right]:
-                left = mid+1
+        # input: rotated input array
+        # output: minimum value
+        # [2,4,5,6,7,0,1]
+        low = 0
+        high = len(nums)-1
+        while low<high:
+            mid_pt = (low+high)//2
+            if nums[mid_pt]>nums[high]:
+                low = mid_pt+1
             else:
-                right = mid
-        return nums[left]
+                high = mid_pt
+        return nums[low]
