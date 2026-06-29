@@ -16,15 +16,16 @@ class Solution(object):
         from collections import deque
         q = deque()
         q.append(root)
+
         result = []
         while q:
-            res = []
+            level = []
             for _ in range(len(q)):
                 node = q.popleft()
                 if node:
-                    res.append(node.val)
+                    level.append(node.val)
                     q.append(node.left)
                     q.append(node.right)
-            if res:
-                result.append(res[-1])
+            if level:
+                result.append(level[-1])
         return result
