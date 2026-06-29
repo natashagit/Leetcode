@@ -13,24 +13,18 @@ class Solution(object):
         :type head: Node
         :rtype: Node
         """
-        # input: linked list with node val, random ptr
-        # output: deep copy of the same
-        # 2 passes
-        # first pass: create copies of nodes as hashmap to new nodes
-        # second pass: set random and next pointers 
-
-        copy_list = {None: None}
+        oldToCopy = {None:None}
         curr = head
         while curr:
             copy = Node(curr.val)
-            copy_list[curr] = copy
-            curr = curr.next
-
-        curr = head
-        while curr:
-            copy = copy_list[curr]
-            copy.next = copy_list[curr.next]
-            copy.random = copy_list[curr.random]
+            oldToCopy[curr] = copy
             curr = curr.next
         
-        return copy_list[head]
+        curr = head
+        while curr:
+            copy = oldToCopy[curr]
+            copy.next = oldToCopy[curr.next]
+            copy.random = oldToCopy[curr.random]
+            curr = curr.next
+        
+        return oldToCopy[head]
