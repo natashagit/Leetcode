@@ -10,37 +10,30 @@ class Solution(object):
         :type root: Optional[TreeNode]
         :rtype: int
         """
-        # Iterative BFS
-        if root == None:
-            return 0
-        from collections import deque
-        q = deque()
-        res = []
-
-        q.append(root)
-        currLevel = 0
-
-        while q:
-            res.append([])
-            for _ in range(len(q)):
-                node = q.popleft()
-                res[currLevel].append(node.val)
-
-                if node.left is not None:
-                    q.append(node.left)
-                if node.right is not None:
-                    q.append(node.right)
-            currLevel+=1
-        return currLevel
-
-
-        # Recursive way
-        # if root == None:
+        # input: root of binary tree
+        # output: max depth of longest path in tree
+        # Recursive DFS
+        # if root is None:
         #     return 0
-
-        # left = self.maxDepth(root.left)
-        # right = self.maxDepth(root.right)
-
-        # return (1+max(left,right))
+    
+        # return 1+max(findMaxDepth(root.left), findMaxDepth(root.right))
         
+        # Iterative DFS
+        # keep a stack to store node and depth
+        # keep popping from the stack
+        # if node exists
+        # update max depth
         
+        stack = [[root, 1]]
+        maxDepth = 0
+
+        while stack:
+            node, depth = stack.pop()
+            if node:
+                maxDepth = max(maxDepth, depth)
+                stack.append([node.left, depth+1])
+                stack.append([node.right, depth+1])
+            
+        return maxDepth
+
+
