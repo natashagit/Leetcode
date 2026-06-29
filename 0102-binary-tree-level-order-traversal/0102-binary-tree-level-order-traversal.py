@@ -10,21 +10,21 @@ class Solution(object):
         :type root: Optional[TreeNode]
         :rtype: List[List[int]]
         """
-        # input: tree
-        # output: level order traversal: level by level in list
-        # BFS
-        result = []
         from collections import deque
         q = deque()
         q.append(root)
+        result = []
+
         while q:
-            res = []
-            for _ in range(len(q)):
-                node = q.popleft()
+            level = []
+            for i in range(len(q)):
+                node= q.popleft()
                 if node:
-                    res.append(node.val)
+                    level.append(node.val)
                     q.append(node.left)
                     q.append(node.right)
-            if res:
-                result.append(res)
+            if level:
+                result.append(level)
+        
         return result
+
