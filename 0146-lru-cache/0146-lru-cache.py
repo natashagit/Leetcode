@@ -1,69 +1,69 @@
+# Design LRU Cache
+
+# Cache has capacity
+# Store (key, value) in cache
+# Get the value for a particular key from the cache
+# Put a new (key,value) into cache
+# If key there -> put new value for it
+# If key, value added > capacity of cache: remove LRU (key, value)
+
+# Hashmap to be used
+# to keep and order and add and remove from anywhere in O(1) time-> DLL
+# To keep track of LRU and MRU: left and right pointers
+
+# class for creating nodes for linked list
+# class for lru cache with the functions
+# get function -> gets the key value if present, moves LRU node to right
+# put function -> if key to be put exists -> remove it, add new node (key, val), check if capacity exceeded -> remove LRU if so
+# to move LRU, helper functions
+# remove function -> for node to be removed: point prev to next node, and vice versa
+# insert function -> node to be inserted on right- point rightmost node to it and backward too
+
 class Node:
     def __init__(self, key, val):
         self.key = key
         self.val = val
-        self.prev = None
-        self.next = None
-
-class LRUCache(object):
-
+        self.next= self.prev = None
+        
+class LRUCache:
     def __init__(self, capacity):
-        """
-        :type capacity: int
-        """
         self.capacity = capacity
-        self.cache={}
-        self.head = Node(-1, -1)
-        self.tail = Node(-1, -1)
-        self.head.next = self.tail
-        self.tail.prev = self.head
+        self.cache = {}
+        self.left = Node(0,0)
+        self.right = Node(0,0)
+        self.left.next = self.right
+        self.right.prev = self.left
+    
+    def insert(self, Node):
+        prev = self.right.prev
+        nxt = self.right
+        nxt.prev = Node
+        prev.next = Node
+        Node.next = self.right
+        Node.prev = prev
         
-    def add_node(self, node):
-        temp = self.head.next
-        node.next = temp
-        node.prev = self.head
-        self.head.next = node
-        temp.prev = node
-
-    def remove_node(self, node):
-        prev_node = node.prev
-        next_node = node.next
-        prev_node.next = next_node
-        next_node.prev = prev_node
-
+        
+        
+    def remove(self, Node):
+        prev = Node.prev
+        nxt = Node.next
+        prev.next = nxt
+        nxt.prev = prev
+    
     def get(self, key):
-        """
-        :type key: int
-        :rtype: int
-        """
         if key in self.cache:
-            node = self.cache[key]
-            self.remove_node(node)
-            self.add_node(node)
-            return node.val
-        return -1
-        
-
-    def put(self, key, value):
-        """
-        :type key: int
-        :type value: int
-        :rtype: None
-        """
+            self.remove(self.cache[key])
+            self.insert(self.cache[key])
+            return self.cache[key].val
+        else:
+            return -1
+    
+    def put(self, key, val):
         if key in self.cache:
-            node = self.cache[key]
-            self.remove_node(node)
-            del self.cache[key]
-        if len(self.cache)==self.capacity:
-            lru_node = self.tail.prev
-            self.remove_node(lru_node)
-            del self.cache[lru_node.key]
-        newNode = Node(key, value)
-        self.add_node(newNode)
-        self.cache[key] = newNode
-
-
-# Your LRUCache object will be instantiated and called as such:
-# obj = LRUCache(capacity)
-# param_1 = obj.get(key)
-# obj.put(key,value)
+            self.remove(self.cache[key])
+        self.cache[key] = Node(key,val)
+        self.insert(self.cache[key])
+        if len(self.cache)>self.capacity:
+            lru = self.left.next
+            self.remove(lru)
+            del self.cache[lru.key]
