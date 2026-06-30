@@ -18,7 +18,7 @@ class Solution(object):
         # p>root and q>root -> move right recursively;
         # p<root and q<root -> move left;
         # else -> root is LCA
-
+        # Recursively
         if root is None:
             return 
         if p.val>root.val and q.val>root.val:
@@ -27,3 +27,13 @@ class Solution(object):
             return self.lowestCommonAncestor(root.left, p, q)
         else:
             return root
+        # Iteratively
+        # curr = root
+        # while curr:
+        #     if p.val>curr.val and q.val>curr.val:
+        #         curr = curr.right
+        #     elif p.val<curr.val and q.val<curr.val:
+        #         curr=curr.left
+        #     else:
+        #         return curr
+        # return root
