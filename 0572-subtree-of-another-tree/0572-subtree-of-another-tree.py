@@ -15,9 +15,9 @@ class Solution(object):
         # output: return false if subroot is in tree
         # check is same tree now for subroot and tree
         # recursively check for left of tree with subroot or right of tree with subroot
-        def isSameTree(p, q):
+        def isSameTree(p,q):
             if p is None and q is None:
-                return True
+                return True 
             if p is None or q is None:
                 return False
             if p.val!=q.val:
