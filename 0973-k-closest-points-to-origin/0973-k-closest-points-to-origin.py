@@ -8,14 +8,19 @@ class Solution(object):
         # input: points array with coordinates
         # output: points array with k points that have distances closest to origin
         # kth smallest distances -> maxheap
-        heap = []
-        for x,y in points:
-            d = math.sqrt((x**2)+(y**2))
-            heap.append((-d, x, y))
-        
-        heapq.heapify(heap)
+        import heapq, math
+        max_heap = []
 
-        while len(heap)>k:
-            heapq.heappop(heap)
+
+        for x,y in points:
+            distance = math.sqrt(x**2+y**2)
+            heapq.heappush(max_heap, (-distance, x, y))
+            if len(max_heap)>k:
+                heapq.heappop(max_heap)
         
-        return [[x,y] for (_, x, y) in heap]
+        result = []
+
+        for _, x, y in max_heap:
+            result.append([x,y])
+    
+        return result
