@@ -21,22 +21,17 @@ class Solution(object):
         # add values into the array if it is of that frequency
         # return those values in descending order
         # O(n)
-
         from collections import Counter
+        freq = Counter(nums)
 
-        count = Counter(nums) # {1:3, 2:2, 3:1}
+        max_heap = [(-count, num) for num, count in freq.items()]
+        heapq.heapify(max_heap)
 
-        arr = [[] for _ in range(len(nums)+1)]
-        for key,value in count.items():
-            arr[value].append(key)
-        # [[], [3], [2], [1], [], []]
         result = []
-
-        for i in range(len(arr)-1, 0, -1):
-            for key in arr[i]:
-                result.append(key)
-                if len(result)==k:
-                    return result
+        for _ in range(k):
+            count, num = heapq.heappop(max_heap)
+            result.append(num)
+        return result
 
         
 
